@@ -13,11 +13,11 @@ RUN apt-get update
 
 
 ## Install MariaDB
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mariadb-server pwgen && \
-    rm -rf /var/lib/mysql/*
-RUN sed -i -r 's/bind-address.*$/bind-address = 0.0.0.0/' /etc/mysql/my.cnf
-VOLUME  ["/etc/mysql", "/var/lib/mysql"]
-EXPOSE 3306
+#RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mariadb-server pwgen && \
+#    rm -rf /var/lib/mysql/*
+#RUN sed -i -r 's/bind-address.*$/bind-address = 0.0.0.0/' /etc/mysql/my.cnf
+#VOLUME  ["/etc/mysql", "/var/lib/mysql"]
+#EXPOSE 3306
 ## ----------------------------
 ##       MariaDB End
 ## ----------------------------
